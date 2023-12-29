@@ -1,50 +1,119 @@
-
-@import url('components/form-styles.css');
+/* @import url('components/form-styles.css');
 @import url('components/login-styles.css');
-@import url('components/header-styles.css');
+@import url('components/header-styles.css'); */
 
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; 
   font-weight: 400;
 
   /* colous */
-  --primary-color:#4EB790;
+  --primary-color: #4EB790;
   --secondary-color: #CFF5E7;
   --black-sub: #2E353E;
   --white-color: #FFFFFF;
   --red-color: #FC0606;
   --grey-color: #6E7175;
   --yellow-color: #D09705;
+  --light-gradient: linear-gradient(180deg, #4EB790 0%, #20EBA0 100%);
+  /* --dark-gradient:  */
 
   /* text colors */
   --text-color: #2E353E;
 
-
-  /* --h1-font-size: 1.75rem;
-  --normal-font-size: 1rem;
+  --large-font-size: 1.75rem;
   --small-font-size: .813rem;
-   */
-  
+
+
 }
 
-*:before, *:after{
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-   color:var(--black-sub);
-    font-size: 16px;
+  color: var(--black-sub);
+  font-size: 16px;
+  font-style: normal;
+}
+
+.highlighted_button {
+  font: var(--large-font-size);
+  font-weight: 700;
+  background: var(--light-gradient);
+  font-family: "Poppins", sans-serif; 
+  border: none;
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px 40px 5px 30px;
+  margin: 10px;
+}
+
+.highlighted_button2 {
+  font: var(--large-font-size);
+  font-weight: 700;
+  font-family: 'Karla', sans-serif;
+  background: var(--light-gradient);
+  border: none;
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px 40px 5px 30px;
+  margin: 10px;
 }
 
 
+/* 
+
+
+/* Component 7 
+
+position: absolute;
+left: 15.22%;
+right: 61.1%;
+top: 62.8%;
+bottom: 22.43%;
 
 
 
-.white-button {
+ Rectangle 5 
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+light button gradient 
+background: linear-gradient(180deg, #4EB790 0%, #20EBA0 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+Donate NOW! 
+
+position: absolute;
+width: 211px;
+left: calc(50% - 211px/2 - 7px);
+top: 21.52%;
+bottom: 21.52%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+/*text-align: center;
+
+color: #FFFEFE; 
+
+ .white-button {
   color: #292b2c;
   padding: 7px 20px;
   background-color: rgb(255, 255, 255);
@@ -59,10 +128,10 @@ body {
 }
 
 
+*/
 
 
-
-/* Rectangle 19 */
+/* Rectangle 19 
 
 position: absolute;
 left: 0%;
@@ -71,4 +140,5 @@ top: 1.63%;
 bottom: 0%;
 
 background: #F5F5F5;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+*/
