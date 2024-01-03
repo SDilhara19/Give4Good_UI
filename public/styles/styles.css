@@ -1,8 +1,10 @@
 /* @import url('components/form-styles.css');
 @import url('components/login-styles.css');*/
 @import url('components/header-styles.css'); 
+@import url('components/footer.css');
 @import url('components/fundraiser.css');
 @import url('components/fundriaser-cards.css'); 
+@import url('components/index.css'); 
 
 * {
   box-sizing: border-box;
@@ -40,13 +42,14 @@
 
 body {
   color: var(--black-sub);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
 }
 
 main{
-  margin-top: 90px;
+  margin-top: 115px;
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 li,
@@ -80,6 +83,12 @@ h1, h2, h3{
   margin:0;
   color: var(--grey-color)
   
+}
+
+.text-4{
+  margin:0;
+  font-size: 0.75rem;
+  color: var(--grey-color);
 }
 .main-color-button{
   background: var(--light-gradient);
@@ -122,42 +131,7 @@ h1, h2, h3{
   height: 3rem;
 }
 
-.home-box
-{
-  background-color: var(--secondary-color);
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  top: 30px;
-}
 
-
-.left-home-box{
-  flex-grow: 1;
-  height: auto;
-  padding: 5% 5% 5% 8%;
-  /* position: absolute; */
-  
-}
-
-
-.xlarge-text{
-  font-weight: 800;
-  font-size: 8vh;
-  text-align: justify;
-  letter-spacing: 0.1rem;
-}
-.large-text{
-  font-weight: 800;
-  font-size: 5vh;
-}
-.medium-text{
-  font-weight: 800;
-  padding-left: 12%;
-  font-size: 4vh;
-}
 
 .highlighted-button {
   font: var(--large-font-size);
@@ -171,25 +145,6 @@ h1, h2, h3{
   padding: 10px 40px 10px 30px;
   margin: 10px;
   letter-spacing: 1px;
-
-}
-
-.home-box .highlighted-button{
-  position: relative;
-  left: 30%;
-}
-
-
-
-.right-home-box {
-  flex-grow: 1;
-
-}
-
-.right-home-box img{
-  border-radius: 50%;
-  height: 50vh;
-  border: 5px solid var(--white-color)
 
 }
 
