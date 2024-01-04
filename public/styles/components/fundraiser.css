@@ -183,11 +183,14 @@
 
   .fundraiser-merch-right{
     flex: 5;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
   }
 
   .merch-sizes, .merch-colors{
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
   }
 
@@ -204,6 +207,153 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .merch-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+
+  .merch-price h1{
+    margin-bottom: -0.5rem;
+  }
+
+  .merch-buy-button{
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .merch-buy-button button{
+    width: 50%;
+  }
+
+  .material-card-container {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.material-card {
+    padding: 0.5rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+.material-img-container {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--grey-color);
+    overflow: hidden;
+    padding: 0.5rem;
+
+
+}
+
+.material-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+.material-card-below {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.material-card-below button:hover {
+  transform: scale(1.02);
+}
+
+.send-donation-card-container {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.send-donation-card {
+  padding: 0.5rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+
+.send-donation-img-container {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 0.5px solid var(--grey-color);
+  overflow: hidden;
+  padding: 0.5rem;
+
+
+}
+
+.send-donation-img-container img {
+  border: 1px solid var(--grey-color);
+  /* max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; */
+}
+
+
+
+.send-donation-text {
+  padding-left: 0.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.send-donation-img-container:hover {
+  cursor: pointer;
+
+
+}
+
+.send-donation-details{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
   @media (max-width: 992px){
     .fundraiser-container{
       display: flex;
@@ -214,8 +364,18 @@
       gap: 3rem;
     }
 
-    .fundraiser-left, .fundraiser-right{
+    .fundraiser-left, .fundraiser-right, .fundraiser-merch-left, .fundraiser-merch-right{
       width: 100%;
+    }
+
+    .fundraiser-merch-right{
+    margin-top: 3rem;
+    }
+
+    .fundraiser-merch-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
     }
 
     .fundraiser-button-list{
@@ -225,6 +385,27 @@
       align-items:center;
       width: 60%;
     }
+
+
+    .material-card-container {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .send-donation-card-container {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   }
   
 
@@ -238,8 +419,37 @@
       gap: 3rem;
     }
 
-    .fundraiser-left, .fundraiser-right{
+    .fundraiser-left, .fundraiser-right, .fundraiser-merch-left, .fundraiser-merch-right{
       width: 100%;
     }
+
+    .fundraiser-merch-right{
+    margin-top: 3rem;
+    }
+
+    .fundraiser-merch-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+    }
+
+    .material-card-container {
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-bottom: 3rem;
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .send-donation-card-container {
+  margin-top: 2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
   }
   
