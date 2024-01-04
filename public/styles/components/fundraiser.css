@@ -364,8 +364,18 @@
       gap: 3rem;
     }
 
-    .fundraiser-left, .fundraiser-right{
+    .fundraiser-left, .fundraiser-right, .fundraiser-merch-left, .fundraiser-merch-right{
       width: 100%;
+    }
+
+    .fundraiser-merch-right{
+    margin-top: 3rem;
+    }
+
+    .fundraiser-merch-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
     }
 
     .fundraiser-button-list{
@@ -409,8 +419,18 @@
       gap: 3rem;
     }
 
-    .fundraiser-left, .fundraiser-right{
+    .fundraiser-left, .fundraiser-right, .fundraiser-merch-left, .fundraiser-merch-right{
       width: 100%;
+    }
+
+    .fundraiser-merch-right{
+    margin-top: 3rem;
+    }
+
+    .fundraiser-merch-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
     }
 
     .material-card-container {
