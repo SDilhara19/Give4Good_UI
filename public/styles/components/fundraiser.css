@@ -27,8 +27,9 @@
   .fundraiser-container{
     display: flex;
     justify-content: space-around;
-    margin: 0rem 3rem 0rem 3rem;
+    /* margin: 0rem 3rem 0rem 3rem; */
     align-items: start;
+    gap: 3rem;
   }
 
   .fundraiser-left{
@@ -39,33 +40,43 @@
  
 
   .fundraiser-image-container{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     height: 50vh;
     align-items: center;
+    justify-content: space-between;
   }
 
   
   .fundraiser-image{
     height: 100%;
-    flex-grow: 3;
+    width: 80%;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
   }
 
   .fundraiser-image img{
-    height: 100%;
+    max-width: 100%; 
+  max-height: 100%;
+  object-fit: contain;  
     border-radius: 0.5rem;
   }
 
-  .fundraiser-image-container .left-arrow, .right-arrow{
-    flex-grow: 1;
+  .left-arrow, .right-arrow{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+  }
+
+  .fundraiser-image-container .left-arrow{
+    justify-content: flex-start;
+  }
+
+  .fundraiser-image-container .right-arrow{
+    justify-content: flex-end;
   }
 
   .fundraiser-count-row{
@@ -100,9 +111,7 @@
   }
   
   .fundraiser-right{
-    padding-top: 3rem;
     flex: 1;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -125,14 +134,112 @@
 
   .fundraiser-button-list{
     display: flex;
-    padding: 2rem;
+    padding: 0.5rem;
     flex-direction: column;
     align-items:center;
-    justify-content: space-around;
+    width: 100%;
   }
 
   .info-box{
     margin-bottom: 1rem;
   }
+  .info-box li{
+    text-align: justify;
+  }
 
+
+  /* Merch css begin */
+
+  .fundraiser-merch-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .fundraiser-merch-left{
+    flex: 4;
+  }
+
+  .merch-img-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid var(--grey-color);
+
+  }
+
+  .merch-img-container img{
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain;  
+      border-radius: 0.5rem;
+  }
+
+  .fundraiser-merch-right{
+    flex: 5;
+  }
+
+  .merch-sizes, .merch-colors{
+    display: flex;
+    margin-bottom: 2rem;
+
+  }
+
+  .merch-sizes, .merch-colors p{
+    flex-wrap: nowrap;
+    flex: 10%;
+  }
+
+  .merch-sizes-right, .merch-colors-right{
+    flex:50%;
+    display: grid;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 992px){
+    .fundraiser-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* margin: 0rem 3rem 0rem 3rem; */
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .fundraiser-left, .fundraiser-right{
+      width: 100%;
+    }
+
+    .fundraiser-button-list{
+      display: flex;
+      padding: 0.5rem;
+      flex-direction: column;
+      align-items:center;
+      width: 60%;
+    }
+  }
+  
+
+  @media (max-width: 576px){
+    .fundraiser-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* margin: 0rem 3rem 0rem 3rem; */
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .fundraiser-left, .fundraiser-right{
+      width: 100%;
+    }
+  }
   

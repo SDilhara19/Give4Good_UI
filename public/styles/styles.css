@@ -48,8 +48,8 @@ body {
 
 main{
   margin-top: 115px;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 li,
@@ -126,8 +126,8 @@ h1, h2, h3{
   border-radius: 100px;
   padding: 5px 40px 5px 30px;
   /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); */
-  margin: 10px;
-  width: 300px;
+  margin: 1rem;
+  width: 100%;
   height: 3rem;
 }
 
@@ -148,81 +148,16 @@ h1, h2, h3{
 
 }
 
-
-
-
-
-/* 
-
-
-/* Component 7 
-
-position: absolute;
-left: 15.22%;
-right: 61.1%;
-top: 62.8%;
-bottom: 22.43%;
-
-
-
- Rectangle 5 
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-light button gradient 
-background: linear-gradient(180deg, #4EB790 0%, #20EBA0 100%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-
-
-Donate NOW! 
-
-position: absolute;
-width: 211px;
-left: calc(50% - 211px/2 - 7px);
-top: 21.52%;
-bottom: 21.52%;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 800;
-font-size: 30px;
-line-height: 45px;
-/* identical to box height */
-/*text-align: center;
-
-color: #FFFEFE; 
-
- .white-button {
-  color: #292b2c;
-  padding: 7px 20px;
-  background-color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+@media (max-width: 992px){
+  main{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 576px){
+  main{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
 
-.white-button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-
-*/
-
-
-/* Rectangle 19 
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 1.63%;
-bottom: 0%;
-
-background: #F5F5F5;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-*/
