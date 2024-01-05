@@ -5,6 +5,8 @@
 @import url('components/fundraiser.css');
 @import url('components/fundriaser-cards.css'); 
 @import url('components/index.css'); 
+@import url('components/story.css'); 
+@import url('components/profile.css');
 
 * {
   box-sizing: border-box;

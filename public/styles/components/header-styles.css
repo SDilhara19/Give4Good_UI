@@ -1,7 +1,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
@@ -47,6 +47,9 @@
 
 .nav-logo img {
   height: 65px;
+}
+.dashboard{
+  flex-grow: 0;
 }
 
 .search-bar {}
